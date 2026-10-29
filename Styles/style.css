@@ -1,0 +1,257 @@
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --primary-font-color: #3A3A3A;
+}
+
+
+
+/* Header Related Styles */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 30px;
+    padding: 20px;
+
+    color: var(--primary-font-color);
+}
+
+.nav-title{
+    /* font-size: 1.5rem; */
+}
+
+.nav-menu-list{
+    display: flex;
+    list-style: none;
+    gap: 34px;
+}
+
+.nav-menu-link{
+    text-decoration: none;
+
+    font-weight: 600;
+
+    color: var(--primary-font-color);
+}
+
+.header-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px;
+}
+
+.header-content-title{
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 4.3rem;
+
+    margin-bottom: 16px;
+
+    color: var(--primary-font-color);
+}
+
+.header-content-description{
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.btn-primary{
+  font-weight: 700;
+
+  color: #FFFFFF;
+  background-color: #E02C6D;
+
+  padding: 15px 30px;
+
+  border: none;
+  border-radius: 50px;
+}
+
+.header-content-image{
+  background: url("../images/Circle\ design.svg") no-repeat center;
+  background-size: contain;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+  .navbar{
+    margin-top: 0px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-title{
+    color: black;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+  }
+
+  .nav-menu-list{
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-menu-link{
+    font-size: 1rem;
+  }
+
+  .header-content{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    text-align: center;
+  }
+
+  .header-content-title{
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+  }
+
+  .header-content-image{
+    order: 1;
+    background-size: contain;
+  }
+
+  .header-content-info{
+    order: 2;
+  }
+
+  .header-content-image img{
+    width: 100%;
+  }
+}
